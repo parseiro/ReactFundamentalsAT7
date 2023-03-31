@@ -13,8 +13,8 @@ export interface Pessoa {
 function People() {
     const fetchPeople = async (): Promise<Pessoa[]> => {
         // Generate random persons using Faker
-        return new Array<Pessoa>(100)
-            .fill({id: '', nome: '', cargo: ''})
+        return new Array<Pessoa>(300)
+            .fill({id: '', nome: '', departamento: '', cargo: ''})
             .map(() => ({
                     id: faker.datatype.uuid(),
                     nome: faker.name.fullName(),
