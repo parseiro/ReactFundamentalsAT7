@@ -7,6 +7,7 @@ import {Pagination} from "flowbite-react";
 export interface Pessoa {
     id: string,
     nome: string,
+    departamento: string,
     cargo: string
 }
 
@@ -18,6 +19,7 @@ function People() {
             .map(() => ({
                     id: faker.datatype.uuid(),
                     nome: faker.name.fullName(),
+                    departamento: faker.name.jobArea(),
                     cargo: faker.name.jobTitle()
                 })
             )

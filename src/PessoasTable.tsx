@@ -19,11 +19,14 @@ function PessoasTable(props: Props) {
                     <Table.HeadCell className="text-center">
                         ID
                     </Table.HeadCell>
-                    <Table.HeadCell className="min-w-[200px]">
+                    <Table.HeadCell>
                         Name
                     </Table.HeadCell>
-                    <Table.HeadCell className="min-w-[300px]">
-                        Cargo
+                    <Table.HeadCell>
+                        Area
+                    </Table.HeadCell>
+                    <Table.HeadCell>
+                        Title
                     </Table.HeadCell>
                 </Table.Head>
                 <Table.Body className="divide-y">
